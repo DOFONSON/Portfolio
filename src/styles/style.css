@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Roboto-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JacquardaBastard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/JacquardaBastarda9-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/KodeMono-VariableFont_wght.woff2") format("woff2");
+}
+.navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  transition: 0.3 ease-in-out;
+}
+.navigation .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+}
+.navigation .navigation__title {
+  font-size: 2.4rem;
+  font-family: "JacquardaBastard", sans-serif;
+}
+.navigation .navigation__list {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.navigation .navbar__link {
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  font-size: 1.8rem;
+  opacity: 0.75;
+  color: #fff;
+}
+.navigation .navbar__link:hover {
+  opacity: 1;
+  transition: 0.45s;
+}
+.navigation .navigation__item .active {
+  opacity: 1;
+}
+.navigation .navigation__socials {
+  border-bottom: 3px solid rgb(221, 221, 221);
+  margin-right: 20px;
+  font-size: 1.8rem;
+}
+.navigation .socials__list {
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  font-size: 1.15rem;
+  top: 31px;
+  right: 20px;
+  position: absolute;
+  background-color: #121212;
+}
+.navigation .socials__list li {
+  padding: 5px;
+  border: 3px solid white;
+  transition: 0.4s;
+}
+.navigation .socials__list li:hover {
+  background-color: white;
+}
+.navigation .socials__list li:hover a {
+  color: #121212;
+  transition: 0.4s;
+}
+.navigation .socials__list a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}/*# sourceMappingURL=style.css.map */
