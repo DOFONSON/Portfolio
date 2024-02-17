@@ -53,7 +53,7 @@
   opacity: 1;
 }
 .navigation .navigation__socials {
-  border-bottom: 3px solid rgb(221, 221, 221);
+  border-bottom: 2px solid rgb(221, 221, 221);
   margin-right: 20px;
   font-size: 1.8rem;
 }
@@ -68,7 +68,7 @@
 }
 .navigation .socials__list li {
   padding: 5px;
-  border: 3px solid white;
+  border: 2.5px solid white;
   transition: 0.4s;
 }
 .navigation .socials__list li:hover {
@@ -139,4 +139,105 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.banner__right {
+  position: relative;
+  min-width: 630px;
+  height: 630px;
+}
+
+.banner__img {
+  z-index: -200;
+  position: absolute;
+  background: url("../assets/img/6739078.svg") no-repeat;
+  height: 630px;
+  width: 630px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.banner__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__left {
+  min-width: 50%;
+}
+.banner__left .banner__welcome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  color: beige;
+}
+.banner__left .banner__welcome .handIcon {
+  width: 30px;
+  height: 30px;
+  animation: rotateIcon 2s linear infinite;
+}
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.banner__left .banner__title {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-family: "Kode", sans-serif;
+  line-height: 80px;
+}
+.banner__left .banner__title .banner__jobs {
+  border-right: 3px solid white;
+  animation: hideShow 1s linear infinite;
+}
+.banner__left .banner__description {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+@keyframes hideShow {
+  50% {
+    border-right: none;
+  }
+  100% {
+    border-right: 3px solid white;
+  }
+}
+
+.banner {
+  padding-top: 75px;
+}
+
+.wrapper {
+  padding: 0px 25px;
+  max-width: 1640px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
