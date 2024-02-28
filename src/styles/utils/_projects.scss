@@ -1,0 +1,65 @@
+    .projects {
+        padding: 120px 0 50px;
+        text-align: center;
+    }
+    .projects__title {
+        font-size: 3rem;
+        font-family: 'Kode', sans-serif;
+    }
+    .projects__list {
+        display: grid;
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card__title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .card__link {
+        text-decoration: none;
+        color: #b665b4;
+        position: relative; 
+        &:hover::after{
+            animation: linkLine 1.5s ease-in-out;
+        }
+        
+    }
+    .card__link::after {
+        content: '';
+        position: absolute;
+        width: 0%; 
+        bottom: -5px; 
+        left: 0;
+        height: 3px;
+        background-color: #b665b4;
+        
+    }
+    .card__description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .projects__card {
+        margin-bottom: 30px;
+    }
+
+
+    @keyframes linkLine {
+        25% {
+            width:  100%;
+            left: 0%;
+
+        }
+        50% {
+            width: 0%;
+            left: 100%;
+        }
+        75% {
+            width: 100%;
+            left: 0%;
+
+        }
+        100% {
+            width: 0%;
+            left: 0%;
+        }
+    } 

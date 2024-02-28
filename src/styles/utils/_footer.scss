@@ -1,0 +1,15 @@
+.footer{
+    padding: 20px 0;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .title{
+        font-size: 2.4rem;
+        font-family: 'JacquardaBastard', sans-serif;
+    }
+    .footer__socials{
+        display: flex;
+        gap: 10px;
+    }
+}

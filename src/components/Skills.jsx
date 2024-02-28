@@ -36,8 +36,9 @@ export const Skills = () => {
     };
 
     return (
-        <section className="skills">
+        <section className="skills" id='skills'>
             <div className="wrapper">
+            <h1 className='skills__title'>Skills</h1>
                 <div className="skills__slider">
                     <button className="slider__arrow-btn slider__arrow-btn--first disabled" onClick={handlePrevSlide}>
                         <ArrowLeft className="slider__arrow " />

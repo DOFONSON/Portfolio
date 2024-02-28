@@ -43,12 +43,12 @@ export const Banner = function () {
 
 
     return (
-        <section className="banner">
+        <section className="banner" id="home">
             <div className="wrapper">
                 <div className="banner__row">
                     <div className="banner__left">
                        <span className="banner__welcome">Welcome to my portfolio <HandIcon className="handIcon"/></span>
-                       <h2 className="banner__title">Hi i'm Tim Nazarov, and I am <span className="banner__jobs"> {text}</span></h2>
+                       <h2 className="banner__title" style={text == ' ' ||  text == ''? {marginBottom: 110} : {marginBottom: 0}}>Hi i'm Tim Nazarov, and I am <span className="banner__jobs"> {text}</span></h2>
                        <p className="banner__description">My name is Timofey Nazarov, I am a first-year web technology student at Moscow Polytechnic University. 
                           I love programming and everything related to it. I want to become a web developer and work in a friendly team. 
                           I like to develop in it-related fields and that's why I spend a lot of time on it. 
